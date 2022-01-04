@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import static streams.model.Status.ACTIVE;
 
-public class FilterForEach {
+public class AnyMatch {
     public static void main(String[] args) {
         var products = new ArrayList<Product>();
 
@@ -18,8 +18,9 @@ public class FilterForEach {
         products.add(new Product("Cerveja 600 ml", ACTIVE, new BigDecimal("8.4")));
         products.add(new Product("Cupim 2Kg", ACTIVE, new BigDecimal("92")));
 
-        products.stream()
-                .filter(p -> p.getName().startsWith("C"))
-                .forEach(Product::inactivate);
+        var doYouHaveSteak = products.stream()
+                .anyMatch(p -> p.getName().equals("Picanha 1Kg"));
+
+        System.out.println(doYouHaveSteak);
     }
 }
