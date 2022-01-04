@@ -63,4 +63,14 @@ public class Product {
 
         this.status = Status.INACTIVE;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", status=" + status +
+                ", price=" + price +
+                ", category=" + category +
+                '}';
+    }
 }
