@@ -18,9 +18,9 @@ public class AnyMatch {
         products.add(new Product("Cerveja 600 ml", ACTIVE, new BigDecimal("8.4")));
         products.add(new Product("Cupim 2Kg", ACTIVE, new BigDecimal("92")));
 
-        var doYouHaveSteak = products.stream()
+        var doYouHaveMeat = products.stream()
                 .anyMatch(p -> p.getName().equals("Picanha 1Kg"));
 
-        System.out.println(doYouHaveSteak);
+        System.out.println(doYouHaveMeat);
     }
 }
