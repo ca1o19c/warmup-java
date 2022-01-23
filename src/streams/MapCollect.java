@@ -1,14 +1,14 @@
 package streams;
 
-import streams.model.Category;
-import streams.model.Product;
+import streams.domain.Category;
+import streams.domain.Product;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
-import static streams.model.Status.ACTIVE;
-import static streams.model.Status.INACTIVE;
+import static streams.domain.Status.ACTIVE;
+import static streams.domain.Status.INACTIVE;
 
 public class MapCollect {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package streams.model;
+package streams.domain;
 
 public class Category {
     private String name;

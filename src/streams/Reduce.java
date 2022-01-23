@@ -1,14 +1,13 @@
 package streams;
 
-import streams.model.Product;
-import streams.model.Status;
+import streams.domain.Product;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
 import static java.math.BigDecimal.ZERO;
-import static streams.model.Status.*;
-import static streams.model.Status.ACTIVE;
+import static streams.domain.Status.*;
+import static streams.domain.Status.ACTIVE;
 
 public class Reduce {
     public static void main(String[] args) {

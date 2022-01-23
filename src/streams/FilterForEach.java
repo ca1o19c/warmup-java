@@ -1,12 +1,12 @@
 package streams;
 
-import streams.model.Product;
-import streams.model.Status;
+import streams.domain.Product;
+import streams.domain.Status;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import static streams.model.Status.ACTIVE;
+import static streams.domain.Status.ACTIVE;
 
 public class FilterForEach {
     public static void main(String[] args) {
