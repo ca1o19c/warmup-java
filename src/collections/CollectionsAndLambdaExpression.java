@@ -1,6 +1,6 @@
 package collections;
 
-import collections.model.Customer;
+import collections.domain.Customer;
 
 import java.util.ArrayList;
 

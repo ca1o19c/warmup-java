@@ -1,4 +1,4 @@
-package collections.model;
+package collections.domain;
 
 public class Customer {
 
